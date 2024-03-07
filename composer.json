@@ -1,14 +1,19 @@
 {
     "name": "yavuzcv/filament-char-counter",
-    "description": "Char counter for Filament PHP",
-    "homepage": "https://github.com/yavuzcv/filament-char-counter",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "YavuzCv",
-            "role": "Developer"
+    "description": "Char counter for FilamentPHP",
+    "autoload": {
+        "psr-4": {
+            "YavuzCv\\FilamentCharCounter\\": "src/"
         }
-    ],
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "YavuzCv\\FilamentCharCounter\\CharCounterServiceProvider"
+            ]
+        }
+    },
     "require": {
         "php": "^8.1",
         "filament/filament": "^3.0@beta",
@@ -27,33 +32,5 @@
         "phpstan/phpstan-deprecation-rules": "^1.0",
         "phpstan/phpstan-phpunit": "^1.0",
         "phpunit/phpunit": "^9.5|^10.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "YavuzCv\\FilamentCharCounter\\": "src"
-        }
-    },
-    "scripts": {
-        "post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
-        "analyse": "vendor/bin/phpstan analyse",
-        "test": "vendor/bin/pest",
-        "test-coverage": "vendor/bin/pest --coverage",
-        "format": "vendor/bin/pint"
-    },
-    "config": {
-        "sort-packages": true,
-        "allow-plugins": {
-            "pestphp/pest-plugin": true,
-            "phpstan/extension-installer": true
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "YavuzCv\\FilamentCharCounter\\CharCounterServiceProvider"
-            ]
-        }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }
