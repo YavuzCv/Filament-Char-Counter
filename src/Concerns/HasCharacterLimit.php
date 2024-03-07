@@ -1,6 +1,6 @@
 <?php
 
-namespace YavuzC\FilamentCharCounter\Concerns;
+namespace YavuzCv\FilamentCharCounter\Concerns;
 
 trait HasCharacterLimit
 {

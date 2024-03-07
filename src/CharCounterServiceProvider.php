@@ -1,6 +1,6 @@
 <?php
 
-namespace YavuzC\FilamentCharCounter;
+namespace YavuzCv\FilamentCharCounter;
 
 use Filament\Support\Assets\Css;
 use Filament\Support\Facades\FilamentAsset;
@@ -14,7 +14,7 @@ class CharCounterServiceProvider extends PackageServiceProvider
     {
         $package
             ->hasAssets()
-            ->name('yavuzc-filament-char-counter')
+            ->name('yavuzcv-filament-char-counter')
             ->hasViews();
     }
 
@@ -23,7 +23,7 @@ class CharCounterServiceProvider extends PackageServiceProvider
         parent::packageBooted();
 
         FilamentAsset::register([
-            Css::make('yavuzc-filament-char-counter', __DIR__ . '/../resources/dist/css/char-counter.css')
+            Css::make('yavuzcv-filament-char-counter', __DIR__ . '/../resources/dist/css/char-counter.css')
         ]);
     }
 

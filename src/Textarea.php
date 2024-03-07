@@ -1,13 +1,13 @@
 <?php
 
-namespace YavuzC\FilamentCharCounter;
+namespace YavuzCv\FilamentCharCounter;
 
 use Filament\Forms\Components\Textarea as FilamentTextarea;
-use YavuzC\FilamentCharCounter\Concerns\HasCharacterLimit;
+use YavuzCv\FilamentCharCounter\Concerns\HasCharacterLimit;
 
 class Textarea extends FilamentTextarea
 {
     use HasCharacterLimit;
 
-    protected string $view = 'yavuzc-filament-char-counter::textarea';
+    protected string $view = 'yavuzcv-filament-char-counter::textarea';
 }

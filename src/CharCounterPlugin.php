@@ -1,6 +1,6 @@
 <?php
 
-namespace YavuzC\FilamentCharCounter;
+namespace YavuzCv\FilamentCharCounter;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;
@@ -9,7 +9,7 @@ class CharCounterPlugin implements Plugin
 {
     public function getId(): string
     {
-        return 'yavuzc-filament-char-counter';
+        return 'yavuzcv-filament-char-counter';
     }
 
     public static function make(): static
